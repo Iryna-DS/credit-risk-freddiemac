@@ -59,12 +59,13 @@ AUC ~0.79–0.80 is consistent with mortgage default predictability at originati
 - **Broker channel** shows highest default rate (2.63%) vs Correspondent (2.12%)
 - Interest rates rose **+165bps** from 2022 to 2023, suppressing refinance activity
 - Portfolio delinquency continues rising through 2025 — peak default not yet reached
+- **Hawaii (HI)** anomalously high default rate (6.5%) despite average FICO 747 — geographic risk cannot be explained by borrower quality alone
 
 ### Modeling
 - All models converge at AUC ~0.79 — reflects natural predictability ceiling at origination
 - Low CV std (<0.01) confirms results are stable across different data splits
 - `credit_score`, `orig_upb`, `dti`, `ocltv` are top predictive features
-- class imbalance (40:1) handled via `class_weight='balanced'`
+- Class imbalance (40:1) handled via `class_weight='balanced'`
 
 ---
 
